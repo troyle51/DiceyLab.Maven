@@ -9,8 +9,14 @@ public class Dice {
     public int rollDice(){
         double roll = Math.random() * 6 +1;
         int toInt = (int) roll;
-        //roll = roll * numOfRolls;
-        //System.out.println(toInt);
         return toInt;
+    }
+
+    public int rollMultipleDice(Integer numOfRolls){
+        int sum = 0;
+        for (int i = 0; i < numOfRolls; i++){
+            sum = sum + rollDice();
+        }
+        return sum;
     }
 }
