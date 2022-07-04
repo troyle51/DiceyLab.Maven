@@ -7,10 +7,14 @@ public class DiceTest {
 public void testDice(){
     //given
     Dice dice = new Dice();
-    int roll = 1;
+    boolean isTrue = false;
+
     //when
-    dice.rollDice(2);
+    dice.rollDice();
+    if(dice.rollDice() == 1 || dice.rollDice() == 2 || dice.rollDice() == 3 || dice.rollDice() == 4 || dice.rollDice() == 5 || dice.rollDice() == 6){
+        isTrue = true;
+    }
     //then
-    Assert.assertEquals(roll, dice.rollDice(2));
+    Assert.assertEquals(true, isTrue);
 }
 }

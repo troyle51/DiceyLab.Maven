@@ -6,7 +6,7 @@ public class Dice {
         this.numOfRolls = numOfRolls;
     }
 
-    public int rollDice(Integer numOfRolls){
+    public int rollDice(){
         double roll = Math.random() * 6 +1;
         int toInt = (int) roll;
         //roll = roll * numOfRolls;
