@@ -17,4 +17,17 @@ public void testDice(){
     //then
     Assert.assertEquals(true, isTrue);
 }
+
+@Test
+    public void testMultipleDice(){
+    //given
+    Dice dice = new Dice();
+    int i = 7;
+
+    //when
+    dice.rollMultipleDice(2);
+
+    //then
+    Assert.assertEquals(i, dice.rollMultipleDice(2));
+}
 }
