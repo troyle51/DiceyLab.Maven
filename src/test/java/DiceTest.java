@@ -19,15 +19,15 @@ public void testDice(){
 }
 
 @Test
-    public void testMultipleDice(){
+    public void testTossAndSum(){
     //given
     Dice dice = new Dice();
     int i = 7;
 
     //when
-    dice.rollMultipleDice(2);
+    dice.tossAndSum(2);
 
     //then
-    Assert.assertEquals(i, dice.rollMultipleDice(2));
+    Assert.assertEquals(i, dice.tossAndSum(2));
 }
 }

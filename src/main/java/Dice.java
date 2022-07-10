@@ -1,20 +1,20 @@
 public class Dice {
 
-    private int numOfRolls;
+    private int numOfDice;
 
     public Dice() {
-        this.numOfRolls = numOfRolls;
+        this.numOfDice = numOfDice;
     }
 
-    public int rollDice(){
+    public static int rollDice(){
         double roll = Math.random() * 6 +1;
         int toInt = (int) roll;
         return toInt;
     }
 
-    public int rollMultipleDice(Integer numOfRolls){
+    public static int tossAndSum(Integer numOfDice){
         int sum = 0;
-        for (int i = 0; i < numOfRolls; i++){
+        for (int i = 0; i < numOfDice; i++){
             sum = sum + rollDice();
         }
         return sum;
