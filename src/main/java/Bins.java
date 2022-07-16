@@ -14,6 +14,10 @@ public class Bins {
         //this.increment = increment;
     }
 
+    public Integer[] getBinsArr() {
+        return binsArr;
+    }
+
     public Integer[] createBin() {
         //Integer[] binsArr = new Integer[11];
         for(int i = 0; i < binsArr.length; i++){
